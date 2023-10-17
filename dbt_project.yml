@@ -9,12 +9,12 @@ profile: 'sql_endpoints'
 vars:
   scalefactor: 10
   benchmark: 10
-  stage: stagename
-  stagingschema: stagingschema
+  stage: dbtpcdi_stg
+  stagingschema: dbtpcdi_stg
   bucketname: bucketname  # bigquery, redshift only
   storageaccountname: synapsemigrationdemoadls
-  catalog: tpcdi
-  prodschema: prodschema
+  catalog: hive_metastore
+  prodschema: dbtpcdi_prd
 
 model-paths: ["Databricks/models/main"]
 analysis-paths: ["analyses"]
