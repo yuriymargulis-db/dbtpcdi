@@ -6,5 +6,7 @@
 select
     *
 from
-    hive_metastore.roberto_salcido_tpcdi_stage.customermgmt1000
+    hive_metastore.dbtpcdi_stg.customermgmt
+
+    -- hive_metastore.roberto_salcido_tpcdi_stage.customermgmt1000
 

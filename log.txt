@@ -1,0 +1,529 @@
+[0m07:46:05  Running with dbt=1.6.6
+[0m07:46:06  Registered adapter: databricks=1.6.6
+[0m07:46:06  Found 33 models, 14 tests, 34 sources, 0 exposures, 0 metrics, 726 macros, 0 groups, 0 semantic models
+[0m07:46:06  1 of 34 START external source dbtpcdi_stg.StatusType
+[0m07:46:07  1 of 34 (1) drop table if exists `hive_metastore`.`dbtpcdi_stg`.`StatusType`
+[0m07:46:07  1 of 34 (1) OK
+[0m07:46:07  1 of 34 (2) create table `hive_metastore`.`dbtpcdi_stg`.`StatusType` (                    st...  
+[0m07:46:07  1 of 34 (2) OK
+[0m07:46:07  2 of 34 START external source dbtpcdi_stg.TaxRate
+[0m07:46:07  2 of 34 (1) drop table if exists `hive_metastore`.`dbtpcdi_stg`.`TaxRate`
+[0m07:46:07  2 of 34 (1) OK
+[0m07:46:07  2 of 34 (2) create table `hive_metastore`.`dbtpcdi_stg`.`TaxRate` (                    tx_id...  
+[0m07:46:08  2 of 34 (2) OK
+[0m07:46:08  3 of 34 START external source dbtpcdi_stg.DimTime
+[0m07:46:08  3 of 34 (1) drop table if exists `hive_metastore`.`dbtpcdi_stg`.`DimTime`
+[0m07:46:08  3 of 34 (1) OK
+[0m07:46:08  3 of 34 (2) create table `hive_metastore`.`dbtpcdi_stg`.`DimTime` (                    sk_ti...  
+[0m07:46:09  3 of 34 (2) OK
+[0m07:46:09  4 of 34 START external source dbtpcdi_stg.AccountIncrementaldos
+[0m07:46:09  4 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`AccountIncrementaldos`
+[0m07:46:09  4 of 34 (1) OK
+[0m07:46:09  5 of 34 START external source dbtpcdi_stg.AccountIncrementaltres
+[0m07:46:09  5 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`AccountIncrementaltres`
+[0m07:46:10  5 of 34 (1) OK
+[0m07:46:10  6 of 34 START external source dbtpcdi_stg.CashTransactionHistory
+[0m07:46:10  6 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`CashTransactionHistory`
+[0m07:46:10  6 of 34 (1) OK
+[0m07:46:10  7 of 34 START external source dbtpcdi_stg.CashTransactionIncrementaldos
+[0m07:46:10  7 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`CashTransactionIncrementaldos`
+[0m07:46:10  7 of 34 (1) OK
+[0m07:46:10  8 of 34 START external source dbtpcdi_stg.CashTransactionIncrementaltres
+[0m07:46:10  8 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`CashTransactionIncrementaltres`
+[0m07:46:11  8 of 34 (1) OK
+[0m07:46:11  9 of 34 START external source dbtpcdi_stg.customerincrementaldos
+[0m07:46:11  9 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`customerincrementaldos`
+[0m07:46:11  9 of 34 (1) OK
+[0m07:46:11  10 of 34 START external source dbtpcdi_stg.customerincrementaltres
+[0m07:46:11  10 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`customerincrementaltres`
+[0m07:46:11  10 of 34 (1) OK
+[0m07:46:11  11 of 34 START external source dbtpcdi_stg.DailyMarketHistorical
+[0m07:46:11  11 of 34 (1) drop table if exists `hive_metastore`.`dbtpcdi_stg`.`DailyMarketHistorical`
+[0m07:46:12  11 of 34 (1) OK
+[0m07:46:12  11 of 34 (2) create table `hive_metastore`.`dbtpcdi_stg`.`DailyMarketHistorical` (           ...  
+[0m07:46:12  11 of 34 (2) OK
+[0m07:46:12  12 of 34 START external source dbtpcdi_stg.DailyMarketIncrementaldos
+[0m07:46:12  12 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`DailyMarketIncrementaldos`
+[0m07:46:13  12 of 34 (1) OK
+[0m07:46:13  13 of 34 START external source dbtpcdi_stg.DailyMarketIncrementaltres
+[0m07:46:13  13 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`DailyMarketIncrementaltres`
+[0m07:46:13  13 of 34 (1) OK
+[0m07:46:13  14 of 34 START external source dbtpcdi_stg.DimDate
+[0m07:46:13  14 of 34 (1) drop table if exists `hive_metastore`.`dbtpcdi_stg`.`DimDate`
+[0m07:46:13  14 of 34 (1) OK
+[0m07:46:13  14 of 34 (2) create table `hive_metastore`.`dbtpcdi_stg`.`DimDate` (                    sk_da...  
+[0m07:46:14  14 of 34 (2) OK
+[0m07:46:14  15 of 34 START external source dbtpcdi_stg.HR
+[0m07:46:14  15 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`HR`
+[0m07:46:14  15 of 34 (1) OK
+[0m07:46:14  16 of 34 START external source dbtpcdi_stg.HoldingHistory
+[0m07:46:14  16 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`HoldingHistory`
+[0m07:46:14  16 of 34 (1) OK
+[0m07:46:14  17 of 34 START external source dbtpcdi_stg.HoldingIncrementaldos
+[0m07:46:14  17 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`HoldingIncrementaldos`
+[0m07:46:15  17 of 34 (1) OK
+[0m07:46:15  18 of 34 START external source dbtpcdi_stg.HoldingIncrementaltres
+[0m07:46:15  18 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`HoldingIncrementaltres`
+[0m07:46:15  18 of 34 (1) OK
+[0m07:46:15  19 of 34 START external source dbtpcdi_stg.BatchDateuno
+[0m07:46:15  19 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`BatchDateuno`
+[0m07:46:15  19 of 34 (1) OK
+[0m07:46:15  20 of 34 START external source dbtpcdi_stg.BatchDatedos
+[0m07:46:15  20 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`BatchDatedos`
+[0m07:46:16  20 of 34 (1) OK
+[0m07:46:16  21 of 34 START external source dbtpcdi_stg.BatchDatetres
+[0m07:46:16  21 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`BatchDatetres`
+[0m07:46:16  21 of 34 (1) OK
+[0m07:46:16  22 of 34 START external source dbtpcdi_stg.Industry
+[0m07:46:16  22 of 34 (1) drop table if exists `hive_metastore`.`dbtpcdi_stg`.`Industry`
+[0m07:46:16  22 of 34 (1) OK
+[0m07:46:16  22 of 34 (2) create table `hive_metastore`.`dbtpcdi_stg`.`Industry` (                    in_i...  
+[0m07:46:17  22 of 34 (2) OK
+[0m07:46:17  23 of 34 START external source dbtpcdi_stg.TradeHistory
+[0m07:46:17  23 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeHistory`
+[0m07:46:17  23 of 34 (1) OK
+[0m07:46:17  24 of 34 START external source dbtpcdi_stg.TradeHistoryRaw
+[0m07:46:17  24 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeHistoryRaw`
+[0m07:46:17  24 of 34 (1) OK
+[0m07:46:17  25 of 34 START external source dbtpcdi_stg.TradeIncrementaldos
+[0m07:46:17  25 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeIncrementaldos`
+[0m07:46:18  25 of 34 (1) OK
+[0m07:46:18  26 of 34 START external source dbtpcdi_stg.TradeIncrementaltres
+[0m07:46:18  26 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeIncrementaltres`
+[0m07:46:18  26 of 34 (1) OK
+[0m07:46:18  27 of 34 START external source dbtpcdi_stg.TradeType
+[0m07:46:18  27 of 34 (1) drop table if exists `hive_metastore`.`dbtpcdi_stg`.`TradeType`
+[0m07:46:18  27 of 34 (1) OK
+[0m07:46:18  27 of 34 (2) create table `hive_metastore`.`dbtpcdi_stg`.`TradeType` (                    tt_...  
+[0m07:46:19  27 of 34 (2) OK
+[0m07:46:19  28 of 34 START external source dbtpcdi_stg.WatchIncrementaldos
+[0m07:46:19  28 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`WatchIncrementaldos`
+[0m07:46:19  28 of 34 (1) OK
+[0m07:46:19  29 of 34 START external source dbtpcdi_stg.WatchIncrementaltres
+[0m07:46:19  29 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`WatchIncrementaltres`
+[0m07:46:20  29 of 34 (1) OK
+[0m07:46:20  30 of 34 START external source dbtpcdi_stg.WatchHistory
+[0m07:46:20  30 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`WatchHistory`
+[0m07:46:20  30 of 34 (1) OK
+[0m07:46:20  31 of 34 START external source dbtpcdi_stg.FinWireStg
+[0m07:46:20  31 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`FinWireStg`
+[0m07:46:21  31 of 34 (1) OK
+[0m07:46:21  32 of 34 START external source dbtpcdi_stg.ProspectRawuno
+[0m07:46:21  32 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`ProspectRawuno`
+[0m07:46:21  32 of 34 (1) OK
+[0m07:46:21  33 of 34 START external source dbtpcdi_stg.ProspectRawdos
+[0m07:46:21  33 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`ProspectRawdos`
+[0m07:46:21  33 of 34 (1) OK
+[0m07:46:21  34 of 34 START external source dbtpcdi_stg.ProspectRawtres
+[0m07:46:21  34 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`ProspectRawtres`
+[0m07:46:22  34 of 34 (1) OK
+[0m07:47:04  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100d83a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11450ffd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1145606a0>]}
+[0m07:47:04  Running with dbt=1.6.6
+[0m07:47:04  running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/yuriy.margulis/Documents/GitHub/dbtpcdi', 'log_path': '/Users/yuriy.margulis/Documents/GitHub/dbtpcdi/logs', 'version_check': 'True', 'debug': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt -d run-operation stage_external_sources', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m07:47:04  Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f97fa66e-9a7d-4e4c-bbbc-5fecc417eed5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11450f2b0>]}
+[0m07:47:04  Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f97fa66e-9a7d-4e4c-bbbc-5fecc417eed5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16957feb0>]}
+[0m07:47:04  Registered adapter: databricks=1.6.6
+[0m07:47:04  checksum: 546b81fb56652c304d87abd676e84d4737d8a0c6b62160f4a6e79dcddbc842bb, vars: {}, profile: , target: , version: 1.6.6
+[0m07:47:05  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:47:05  Partial parsing enabled, no changes found, skipping parsing
+[0m07:47:05  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f97fa66e-9a7d-4e4c-bbbc-5fecc417eed5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1699fdf30>]}
+[0m07:47:05  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f97fa66e-9a7d-4e4c-bbbc-5fecc417eed5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16961c070>]}
+[0m07:47:05  Found 33 models, 14 tests, 34 sources, 0 exposures, 0 metrics, 726 macros, 0 groups, 0 semantic models
+[0m07:47:05  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f97fa66e-9a7d-4e4c-bbbc-5fecc417eed5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16961d150>]}
+[0m07:47:05  Acquiring new databricks connection 'macro_stage_external_sources'
+[0m07:47:05  Spark adapter: NotImplemented: add_begin_query
+[0m07:47:05  Spark adapter: NotImplemented: commit
+[0m07:47:05  1 of 34 START external source dbtpcdi_stg.StatusType
+[0m07:47:05  On "macro_stage_external_sources": cache miss for schema ".dbtpcdi_stg", this is inefficient
+[0m07:47:05  Using databricks connection "macro_stage_external_sources"
+[0m07:47:05  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+show tables in `dbtpcdi_stg`
+  
+[0m07:47:05  Opening a new connection, currently in state init
+[0m07:47:05  SQL status: OK in 0.41999998688697815 seconds
+[0m07:47:05  Using databricks connection "macro_stage_external_sources"
+[0m07:47:05  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+show views in `dbtpcdi_stg`
+  
+[0m07:47:05  SQL status: OK in 0.1899999976158142 seconds
+[0m07:47:05  While listing relations in database=, schema=dbtpcdi_stg, found: accountincremental, accountincrementaldos, accountincrementaltres, batchdate, batchdatedos, batchdatetres, batchdateuno, cashtransactionhistory, cashtransactionincremental, cashtransactionincrementaldos, cashtransactionincrementaltres, customerincremental, customerincrementaldos, customerincrementaltres, customermgmt, customermgmtview, dailymarkethistorical, dailymarketincremental, dailymarketincrementaldos, dailymarketincrementaltres, dimdate, dimtime, finwire, finwirestg, holdinghistory, holdingincremental, holdingincrementaldos, holdingincrementaltres, hr, industry, prospectraw, prospectrawdos, prospectrawtres, prospectrawuno, statustype, taxrate, tradehistory, tradehistoryraw, tradeincremental, tradeincrementaldos, tradeincrementaltres, tradetype, watchhistory, watchincremental, watchincrementaldos, watchincrementaltres
+[0m07:47:05  1 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`StatusType`
+[0m07:47:05  Using databricks connection "macro_stage_external_sources"
+[0m07:47:05  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`StatusType`
+    
+            
+[0m07:47:06  SQL status: OK in 0.5299999713897705 seconds
+[0m07:47:06  1 of 34 (1) OK
+[0m07:47:06  2 of 34 START external source dbtpcdi_stg.TaxRate
+[0m07:47:06  2 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`TaxRate`
+[0m07:47:06  Using databricks connection "macro_stage_external_sources"
+[0m07:47:06  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`TaxRate`
+    
+            
+[0m07:47:06  SQL status: OK in 0.5299999713897705 seconds
+[0m07:47:06  2 of 34 (1) OK
+[0m07:47:06  3 of 34 START external source dbtpcdi_stg.DimTime
+[0m07:47:06  3 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`DimTime`
+[0m07:47:06  Using databricks connection "macro_stage_external_sources"
+[0m07:47:06  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`DimTime`
+    
+            
+[0m07:47:07  SQL status: OK in 0.5 seconds
+[0m07:47:07  3 of 34 (1) OK
+[0m07:47:07  4 of 34 START external source dbtpcdi_stg.AccountIncrementaldos
+[0m07:47:07  4 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`AccountIncrementaldos`
+[0m07:47:07  Using databricks connection "macro_stage_external_sources"
+[0m07:47:07  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`AccountIncrementaldos`
+    
+            
+[0m07:47:07  SQL status: OK in 0.2800000011920929 seconds
+[0m07:47:07  4 of 34 (1) OK
+[0m07:47:07  5 of 34 START external source dbtpcdi_stg.AccountIncrementaltres
+[0m07:47:07  5 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`AccountIncrementaltres`
+[0m07:47:07  Using databricks connection "macro_stage_external_sources"
+[0m07:47:07  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`AccountIncrementaltres`
+    
+            
+[0m07:47:07  SQL status: OK in 0.30000001192092896 seconds
+[0m07:47:07  5 of 34 (1) OK
+[0m07:47:07  6 of 34 START external source dbtpcdi_stg.CashTransactionHistory
+[0m07:47:07  6 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`CashTransactionHistory`
+[0m07:47:07  Using databricks connection "macro_stage_external_sources"
+[0m07:47:07  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`CashTransactionHistory`
+    
+            
+[0m07:47:08  SQL status: OK in 0.28999999165534973 seconds
+[0m07:47:08  6 of 34 (1) OK
+[0m07:47:08  7 of 34 START external source dbtpcdi_stg.CashTransactionIncrementaldos
+[0m07:47:08  7 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`CashTransactionIncrementaldos`
+[0m07:47:08  Using databricks connection "macro_stage_external_sources"
+[0m07:47:08  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`CashTransactionIncrementaldos`
+    
+            
+[0m07:47:08  SQL status: OK in 0.30000001192092896 seconds
+[0m07:47:08  7 of 34 (1) OK
+[0m07:47:08  8 of 34 START external source dbtpcdi_stg.CashTransactionIncrementaltres
+[0m07:47:08  8 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`CashTransactionIncrementaltres`
+[0m07:47:08  Using databricks connection "macro_stage_external_sources"
+[0m07:47:08  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`CashTransactionIncrementaltres`
+    
+            
+[0m07:47:08  SQL status: OK in 0.30000001192092896 seconds
+[0m07:47:08  8 of 34 (1) OK
+[0m07:47:08  9 of 34 START external source dbtpcdi_stg.customerincrementaldos
+[0m07:47:08  9 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`customerincrementaldos`
+[0m07:47:08  Using databricks connection "macro_stage_external_sources"
+[0m07:47:08  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`customerincrementaldos`
+    
+            
+[0m07:47:09  SQL status: OK in 0.41999998688697815 seconds
+[0m07:47:09  9 of 34 (1) OK
+[0m07:47:09  10 of 34 START external source dbtpcdi_stg.customerincrementaltres
+[0m07:47:09  10 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`customerincrementaltres`
+[0m07:47:09  Using databricks connection "macro_stage_external_sources"
+[0m07:47:09  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`customerincrementaltres`
+    
+            
+[0m07:47:09  SQL status: OK in 0.30000001192092896 seconds
+[0m07:47:09  10 of 34 (1) OK
+[0m07:47:09  11 of 34 START external source dbtpcdi_stg.DailyMarketHistorical
+[0m07:47:09  11 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`DailyMarketHistorical`
+[0m07:47:09  Using databricks connection "macro_stage_external_sources"
+[0m07:47:09  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`DailyMarketHistorical`
+    
+            
+[0m07:47:10  SQL status: OK in 0.49000000953674316 seconds
+[0m07:47:10  11 of 34 (1) OK
+[0m07:47:10  12 of 34 START external source dbtpcdi_stg.DailyMarketIncrementaldos
+[0m07:47:10  12 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`DailyMarketIncrementaldos`
+[0m07:47:10  Using databricks connection "macro_stage_external_sources"
+[0m07:47:10  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`DailyMarketIncrementaldos`
+    
+            
+[0m07:47:10  SQL status: OK in 0.33000001311302185 seconds
+[0m07:47:10  12 of 34 (1) OK
+[0m07:47:10  13 of 34 START external source dbtpcdi_stg.DailyMarketIncrementaltres
+[0m07:47:10  13 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`DailyMarketIncrementaltres`
+[0m07:47:10  Using databricks connection "macro_stage_external_sources"
+[0m07:47:10  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`DailyMarketIncrementaltres`
+    
+            
+[0m07:47:10  SQL status: OK in 0.28999999165534973 seconds
+[0m07:47:10  13 of 34 (1) OK
+[0m07:47:10  14 of 34 START external source dbtpcdi_stg.DimDate
+[0m07:47:10  14 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`DimDate`
+[0m07:47:10  Using databricks connection "macro_stage_external_sources"
+[0m07:47:10  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`DimDate`
+    
+            
+[0m07:47:11  SQL status: OK in 0.6000000238418579 seconds
+[0m07:47:11  14 of 34 (1) OK
+[0m07:47:11  15 of 34 START external source dbtpcdi_stg.HR
+[0m07:47:11  15 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`HR`
+[0m07:47:11  Using databricks connection "macro_stage_external_sources"
+[0m07:47:11  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`HR`
+    
+            
+[0m07:47:11  SQL status: OK in 0.3199999928474426 seconds
+[0m07:47:11  15 of 34 (1) OK
+[0m07:47:11  16 of 34 START external source dbtpcdi_stg.HoldingHistory
+[0m07:47:11  16 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`HoldingHistory`
+[0m07:47:11  Using databricks connection "macro_stage_external_sources"
+[0m07:47:11  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`HoldingHistory`
+    
+            
+[0m07:47:11  SQL status: OK in 0.28999999165534973 seconds
+[0m07:47:11  16 of 34 (1) OK
+[0m07:47:11  17 of 34 START external source dbtpcdi_stg.HoldingIncrementaldos
+[0m07:47:11  17 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`HoldingIncrementaldos`
+[0m07:47:11  Using databricks connection "macro_stage_external_sources"
+[0m07:47:11  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`HoldingIncrementaldos`
+    
+            
+[0m07:47:12  SQL status: OK in 0.3100000023841858 seconds
+[0m07:47:12  17 of 34 (1) OK
+[0m07:47:12  18 of 34 START external source dbtpcdi_stg.HoldingIncrementaltres
+[0m07:47:12  18 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`HoldingIncrementaltres`
+[0m07:47:12  Using databricks connection "macro_stage_external_sources"
+[0m07:47:12  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`HoldingIncrementaltres`
+    
+            
+[0m07:47:12  SQL status: OK in 0.3400000035762787 seconds
+[0m07:47:12  18 of 34 (1) OK
+[0m07:47:12  19 of 34 START external source dbtpcdi_stg.BatchDateuno
+[0m07:47:12  19 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`BatchDateuno`
+[0m07:47:12  Using databricks connection "macro_stage_external_sources"
+[0m07:47:12  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`BatchDateuno`
+    
+            
+[0m07:47:12  SQL status: OK in 0.30000001192092896 seconds
+[0m07:47:12  19 of 34 (1) OK
+[0m07:47:12  20 of 34 START external source dbtpcdi_stg.BatchDatedos
+[0m07:47:12  20 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`BatchDatedos`
+[0m07:47:12  Using databricks connection "macro_stage_external_sources"
+[0m07:47:12  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`BatchDatedos`
+    
+            
+[0m07:47:13  SQL status: OK in 0.28999999165534973 seconds
+[0m07:47:13  20 of 34 (1) OK
+[0m07:47:13  21 of 34 START external source dbtpcdi_stg.BatchDatetres
+[0m07:47:13  21 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`BatchDatetres`
+[0m07:47:13  Using databricks connection "macro_stage_external_sources"
+[0m07:47:13  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`BatchDatetres`
+    
+            
+[0m07:47:13  SQL status: OK in 0.33000001311302185 seconds
+[0m07:47:13  21 of 34 (1) OK
+[0m07:47:13  22 of 34 START external source dbtpcdi_stg.Industry
+[0m07:47:13  22 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`Industry`
+[0m07:47:13  Using databricks connection "macro_stage_external_sources"
+[0m07:47:13  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`Industry`
+    
+            
+[0m07:47:14  SQL status: OK in 0.5 seconds
+[0m07:47:14  22 of 34 (1) OK
+[0m07:47:14  23 of 34 START external source dbtpcdi_stg.TradeHistory
+[0m07:47:14  23 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeHistory`
+[0m07:47:14  Using databricks connection "macro_stage_external_sources"
+[0m07:47:14  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeHistory`
+    
+            
+[0m07:47:14  SQL status: OK in 0.3100000023841858 seconds
+[0m07:47:14  23 of 34 (1) OK
+[0m07:47:14  24 of 34 START external source dbtpcdi_stg.TradeHistoryRaw
+[0m07:47:14  24 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeHistoryRaw`
+[0m07:47:14  Using databricks connection "macro_stage_external_sources"
+[0m07:47:14  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeHistoryRaw`
+    
+            
+[0m07:47:14  SQL status: OK in 0.28999999165534973 seconds
+[0m07:47:14  24 of 34 (1) OK
+[0m07:47:14  25 of 34 START external source dbtpcdi_stg.TradeIncrementaldos
+[0m07:47:14  25 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeIncrementaldos`
+[0m07:47:14  Using databricks connection "macro_stage_external_sources"
+[0m07:47:14  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeIncrementaldos`
+    
+            
+[0m07:47:14  SQL status: OK in 0.28999999165534973 seconds
+[0m07:47:14  25 of 34 (1) OK
+[0m07:47:14  26 of 34 START external source dbtpcdi_stg.TradeIncrementaltres
+[0m07:47:14  26 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeIncrementaltres`
+[0m07:47:14  Using databricks connection "macro_stage_external_sources"
+[0m07:47:14  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeIncrementaltres`
+    
+            
+[0m07:47:15  SQL status: OK in 0.30000001192092896 seconds
+[0m07:47:15  26 of 34 (1) OK
+[0m07:47:15  27 of 34 START external source dbtpcdi_stg.TradeType
+[0m07:47:15  27 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeType`
+[0m07:47:15  Using databricks connection "macro_stage_external_sources"
+[0m07:47:15  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`TradeType`
+    
+            
+[0m07:47:15  SQL status: OK in 0.47999998927116394 seconds
+[0m07:47:15  27 of 34 (1) OK
+[0m07:47:15  28 of 34 START external source dbtpcdi_stg.WatchIncrementaldos
+[0m07:47:15  28 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`WatchIncrementaldos`
+[0m07:47:15  Using databricks connection "macro_stage_external_sources"
+[0m07:47:15  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`WatchIncrementaldos`
+    
+            
+[0m07:47:16  SQL status: OK in 0.28999999165534973 seconds
+[0m07:47:16  28 of 34 (1) OK
+[0m07:47:16  29 of 34 START external source dbtpcdi_stg.WatchIncrementaltres
+[0m07:47:16  29 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`WatchIncrementaltres`
+[0m07:47:16  Using databricks connection "macro_stage_external_sources"
+[0m07:47:16  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`WatchIncrementaltres`
+    
+            
+[0m07:47:16  SQL status: OK in 0.28999999165534973 seconds
+[0m07:47:16  29 of 34 (1) OK
+[0m07:47:16  30 of 34 START external source dbtpcdi_stg.WatchHistory
+[0m07:47:16  30 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`WatchHistory`
+[0m07:47:16  Using databricks connection "macro_stage_external_sources"
+[0m07:47:16  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`WatchHistory`
+    
+            
+[0m07:47:16  SQL status: OK in 0.3100000023841858 seconds
+[0m07:47:16  30 of 34 (1) OK
+[0m07:47:16  31 of 34 START external source dbtpcdi_stg.FinWireStg
+[0m07:47:16  31 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`FinWireStg`
+[0m07:47:16  Using databricks connection "macro_stage_external_sources"
+[0m07:47:16  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`FinWireStg`
+    
+            
+[0m07:47:17  SQL status: OK in 0.6000000238418579 seconds
+[0m07:47:17  31 of 34 (1) OK
+[0m07:47:17  32 of 34 START external source dbtpcdi_stg.ProspectRawuno
+[0m07:47:17  32 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`ProspectRawuno`
+[0m07:47:17  Using databricks connection "macro_stage_external_sources"
+[0m07:47:17  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`ProspectRawuno`
+    
+            
+[0m07:47:17  SQL status: OK in 0.3100000023841858 seconds
+[0m07:47:17  32 of 34 (1) OK
+[0m07:47:17  33 of 34 START external source dbtpcdi_stg.ProspectRawdos
+[0m07:47:17  33 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`ProspectRawdos`
+[0m07:47:17  Using databricks connection "macro_stage_external_sources"
+[0m07:47:17  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`ProspectRawdos`
+    
+            
+[0m07:47:17  SQL status: OK in 0.28999999165534973 seconds
+[0m07:47:17  33 of 34 (1) OK
+[0m07:47:17  34 of 34 START external source dbtpcdi_stg.ProspectRawtres
+[0m07:47:17  34 of 34 (1) refresh table `hive_metastore`.`dbtpcdi_stg`.`ProspectRawtres`
+[0m07:47:17  Using databricks connection "macro_stage_external_sources"
+[0m07:47:17  On macro_stage_external_sources: /* {"app": "dbt", "dbt_version": "1.6.6", "dbt_databricks_version": "1.6.6", "databricks_sql_connector_version": "2.9.3", "profile_name": "sql_endpoints", "target_name": "databricks", "connection_name": "macro_stage_external_sources"} */
+
+                 
+        refresh table `hive_metastore`.`dbtpcdi_stg`.`ProspectRawtres`
+    
+            
+[0m07:47:18  SQL status: OK in 0.30000001192092896 seconds
+[0m07:47:18  34 of 34 (1) OK
+[0m07:47:18  On macro_stage_external_sources: ROLLBACK
+[0m07:47:18  Databricks adapter: NotImplemented: rollback
+[0m07:47:18  On macro_stage_external_sources: Close
+[0m07:47:18  Command `dbt run-operation` succeeded at 00:47:18.285387 after 14.07 seconds
+[0m07:47:18  Connection 'macro_stage_external_sources' was properly closed.
+[0m07:47:18  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100d83a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x169a0eda0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x169a2fe50>]}
+[0m07:47:18  Flushing usage events

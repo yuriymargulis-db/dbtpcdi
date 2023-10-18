@@ -7,7 +7,7 @@ profile: 'sql_endpoints'
 vars:
   scalefactor: 10
   benchmark: 10
-  stage: dbtpcdi_stg
+  stage: stg
   stagingschema: dbtpcdi_stg
   bucketname: bucketname  # bigquery, redshift only
   storageaccountname: synapsemigrationdemoadls
