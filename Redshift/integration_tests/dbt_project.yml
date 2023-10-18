@@ -20,6 +20,9 @@ clean-targets:
 
 vars:
   max_ship_date: "'1998-12-01'"
+  scalefactor: 10
+  benchmark: 10
+  bucketname: bucketname
 
 dispatch:
   - macro_namespace: dbt_utils

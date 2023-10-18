@@ -1,5 +1,3 @@
----
-
 name: 'springbricks_integration_tests'
 version: '1.0.0'
 config-version: 2
@@ -20,6 +18,10 @@ clean-targets:
 
 vars:
   max_ship_date: "'1998-12-01'"
+  scalefactor: 10
+  benchmark: 10
+  bucketname: bucketname
+
 
 dispatch:
   - macro_namespace: dbt_utils

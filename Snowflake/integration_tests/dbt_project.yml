@@ -1,4 +1,4 @@
-name: 'sql_endpoints'
+name: 'springbricks_integration_tests'
 version: '1.0.0'
 config-version: 2
 
@@ -22,4 +22,3 @@ vars:
 dispatch:
   - macro_namespace: dbt_utils
     search_order: ['dbsql_dbt_tpch', 'dbt_utils']
-   
