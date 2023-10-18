@@ -1,6 +1,6 @@
 ---
 
-name: 'springbricks_integration_tests'
+name: 'sql_endpoints'
 version: '1.0.0'
 config-version: 2
 

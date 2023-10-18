@@ -29,3 +29,4 @@ clean-targets:
 dispatch:
   - macro_namespace: dbt_utils
     search_order: ['dbsql_dbt_tpch', 'dbt_utils']
+   
